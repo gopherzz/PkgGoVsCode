@@ -1,5 +1,5 @@
 {
-	"name": "PkgGo",
+	"name": "pkggo",
 	"displayName": "Pkg.Go",
 	"description": "Pkg.go is Extension for easy search and insert Go packages from pkg.go.dev!",
 	"icon": "resources/icon.png",
@@ -11,13 +11,13 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:gophersearchjs.pkggodev"
+		"onCommand:pkggo.pkggodev"
 	],
 	"main": "./extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "gophersearchjs.pkggodev",
+				"command": "pkggo.pkggodev",
 				"title": "Pkg.go.dev"
 			}
 		]
