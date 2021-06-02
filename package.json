@@ -11,13 +11,13 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:pkggo.pkggodev"
+		"onCommand:pkggo.searchpackage"
 	],
 	"main": "./extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "pkggo.pkggodev",
+				"command": "pkggo.searchpackage",
 				"title": "Pkg.go.dev"
 			}
 		]
