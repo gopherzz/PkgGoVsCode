@@ -1,7 +1,7 @@
 {
-	"name": "pkg.go.dev",
-	"displayName": "pkg.go.dev",
-	"description": "Pkg.go.dev is Extension for easy search and insert Go packages from pkg.go.dev!",
+	"name": "PkgGo",
+	"displayName": "Pkg.Go",
+	"description": "Pkg.go is Extension for easy search and insert Go packages from pkg.go.dev!",
 	"icon": "resources/icon.png",
 	"version": "0.1.0",
 	"engines": {
