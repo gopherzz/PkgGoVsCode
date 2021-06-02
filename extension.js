@@ -38,7 +38,7 @@ async function pickPackage(names, descs) {
 	const result = await vscode.window.showQuickPick(pkgs, {
 		placeHolder: 'Package..."undefined"'
 	});
-	insertImport(`${result}`);
+	insertImport(`${result.label}`);
 }
 
 async function getNames(q){
