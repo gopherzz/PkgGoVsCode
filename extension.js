@@ -17,7 +17,6 @@ function insertImport(pkg) {
 	const editor = vscode.window.activeTextEditor;
 
 	if (editor) {
-		const document = editor.document;
 		if (editor.selection.isEmpty) {
 			var position = editor.selection.active;
 			editor.edit(editBuilder => {
@@ -82,10 +81,9 @@ async function getPackagesWithDescription(query) {
 
 function activate(context) {
 
-	let disposable = vscode.commands.registerCommand('pkggo.searchpackage', () => {
+	let disposable = vscode.commands.registerCommand('pkggo.search', () => {
 		showInputBox().then(
 			value => {
-				console.log(value);
 				getPackagesWithDescription(value);				
 			}
 		);

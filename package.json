@@ -1,9 +1,9 @@
 {
 	"name": "pkggo",
-	"displayName": "Pkg.Go",
+	"displayName": "pkggo",
 	"description": "Pkg.go is Extension for easy search and insert Go packages from pkg.go.dev!",
 	"icon": "resources/icon.png",
-	"version": "0.1.1",
+	"version": "0.1.5",
 	"engines": {
 		"vscode": "^1.56.0"
 	},
@@ -11,14 +11,14 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:pkggo.searchpackage"
+		"onCommand:pkggo.search"
 	],
 	"main": "./extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "pkggo.searchpackage",
-				"title": "Pkg.go.dev"
+				"command": "pkggo.search",
+				"title": "Pkggo..."
 			}
 		]
 	},
@@ -39,5 +39,10 @@
 		"vscode-test": "^1.5.0"
 	},
 	"publisher": "KYCb",
-	"repository": "github.com/KYCb2/PkgGoVsCode"
+	"repository": "github.com/KYCb2/PkgGoVsCode",
+	"dependencies": {
+		"cheerio": "^1.0.0-rc.9",
+		"request": "^2.88.2",
+		"request-promise": "^4.2.6"
+	}
 }
