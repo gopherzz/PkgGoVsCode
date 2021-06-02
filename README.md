@@ -1,6 +1,6 @@
 # Pkg.go README
 
-Pkg.go is Extension for easy search Golang packages from ![pkg.go.dev](https://pkg.go.dev/)!
+Pkg.go is Extension for easy search Golang packages from [pkg.go.dev](https://pkg.go.dev/)!
 
 ## Features
 
@@ -11,17 +11,9 @@ Extension uses for search package by name in Command Pallete and paste for examp
 ![Example Gif](https://github.com/KYCb2/PkgGoVsCode/blob/master/resources/feature.gif?raw=true)
 
 <!-- TODO: Setup gif in github! -->
-### 0.0.1
+### 0.1.0
 
-First commit, created prototype.
-
-### 0.0.2
-
-Added README file.
-
-### 0.0.3
-
-Added Gif To README file.
+First commit, first version. Extension was born!
 
 ### For more information
 
