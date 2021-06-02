@@ -82,8 +82,6 @@ async function getPackagesWithDescription(query) {
 
 function activate(context) {
 
-	console.log('Congratulations, your extension "gophersearch" is now active!');
-
 	let disposable = vscode.commands.registerCommand('pkggo.searchpackage', () => {
 		showInputBox().then(
 			value => {

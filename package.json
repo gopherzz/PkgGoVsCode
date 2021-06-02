@@ -3,7 +3,7 @@
 	"displayName": "Pkg.Go",
 	"description": "Pkg.go is Extension for easy search and insert Go packages from pkg.go.dev!",
 	"icon": "resources/icon.png",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"engines": {
 		"vscode": "^1.56.0"
 	},
