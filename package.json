@@ -1,0 +1,43 @@
+{
+	"name": "pkg.go.dev",
+	"displayName": "pkg.go.dev",
+	"description": "Pkg.go.dev is Extension for easy search and insert Go packages from pkg.go.dev!",
+	"icon": "resources/icon.png",
+	"version": "0.1.0",
+	"engines": {
+		"vscode": "^1.56.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:gophersearchjs.pkggodev"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "gophersearchjs.pkggodev",
+				"title": "Pkg.go.dev"
+			}
+		]
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.56.0",
+		"@types/glob": "^7.1.3",
+		"@types/mocha": "^8.0.4",
+		"@types/node": "^12.11.7",
+		"eslint": "^7.19.0",
+		"glob": "^7.1.6",
+		"mocha": "^8.2.1",
+		"typescript": "^4.1.3",
+		"vscode-test": "^1.5.0"
+	},
+	"publisher": "KYCb",
+	"repository": "github.com/KYCb2/PkgGoVsCode"
+}
