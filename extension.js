@@ -15,9 +15,9 @@ function activate(context) {
 
 	let disposable = vscode.commands.registerCommand('pkggo.search', () => {
 		showInputBox().then(
-			value => {
-				let packages = pkgs.get(value);
-				let picked = picker.show(packages);
+			async value => {
+				let packages = await pkgs.get(value);
+				let picked = await picker.show(packages);
 				insert.pkg(picked);
 			}
 		);
