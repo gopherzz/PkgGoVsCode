@@ -15,18 +15,12 @@ async function showInputBox() {
 function activate(context) {
 
 	let disposable = vscode.commands.registerCommand('pkggo.search', () => {
-		// const isGoFile = vscode.workspace.workspaceFile.path.endsWith('.go');
-		// if (!isGoFile) {
-		// 	vscode.window.showWarningMessage("No go file!")
-		// }
 		showInputBox().then(
 			async value => {
 				let packages = await pkgs.get(value);
 				let picked = await picker.show(packages);
 				insert.pkg(picked);
-				// if (isGoFile) {
 				goGet.show(picked);
-				// }
 			}
 		);
 	});
