@@ -2,6 +2,7 @@ const vscode = require('vscode');
 const pkgs = require('./lib/getPackages');
 const picker = require('./lib/picker');
 const insert = require('./lib/importsInsert');
+const goGet = require('./lib/doGoGetCheck');
 
 async function showInputBox() {
 	const result = await vscode.window.showInputBox({
@@ -19,6 +20,7 @@ function activate(context) {
 				let packages = await pkgs.get(value);
 				let picked = await picker.show(packages);
 				insert.pkg(picked);
+				goGet.show(picked);
 			}
 		);
 	});
