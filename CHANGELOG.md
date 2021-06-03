@@ -1,9 +1,10 @@
 # Change Log
 
-All notable changes to the "gophersearchjs" extension will be documented in this file.
+### 0.1.0
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+First commit, first version. Extension was born!
 
+### 0.2.0
+
+Added optional go get support.
 ## [Unreleased]
-
-- Initial release
