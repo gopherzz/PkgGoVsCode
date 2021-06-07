@@ -1,8 +1,9 @@
 const vscode = require('vscode');
 const pkgs = require('./lib/getPackages');
 const picker = require('./lib/picker');
-const insert = require('./lib/importsInsert');
 const goGet = require('./lib/doGoGetCheck');
+// Dev
+const insert = require('./lib/Insert.js');
 
 async function showInputBox() {
 	const result = await vscode.window.showInputBox({
@@ -19,7 +20,7 @@ function activate(context) {
 			async value => {
 				let packages = await pkgs.get(value);
 				let picked = await picker.show(packages);
-				insert.pkg(picked);
+				devInsert.test(picked);
 				goGet.show(picked);
 			}
 		);
