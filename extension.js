@@ -20,7 +20,7 @@ function activate(context) {
 			async value => {
 				let packages = await pkgs.get(value);
 				let picked = await picker.show(packages);
-				devInsert.test(picked);
+				Insert.test(picked);
 				goGet.show(picked);
 			}
 		);
